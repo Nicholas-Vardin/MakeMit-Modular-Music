@@ -47,7 +47,7 @@ def main():
 
         if response.status_code == 200:
             instruments = str(response.text)
-            prompt = f"Make any sort of upbeat tune using only these instruments: {instruments}"
+            prompt = f"Make any sort of upbeat tune using only these instruments: {instruments}. Make sure there is no vocals."
             print(prompt)
             generate_and_play_music(prompt, 10)
         else:

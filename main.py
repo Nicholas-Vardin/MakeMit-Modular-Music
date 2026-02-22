@@ -13,10 +13,10 @@ def doEsp32():
     if now-start >  1:
         start = time.perf_counter()
         newInstruments = getInstruments()
-        if newInstruments != instruments:
+        if newInstruments != instruments :
             instruments = newInstruments
             print("starting new music with:", instruments)
-            prompt = f"make an upbeat song sure to excite people with only these instruments: {instruments}"
+            prompt = f"make an upbeat song sure to excite people with only these instruments: {instruments}, Make sure theres no vocals"
             senderTest.generate_and_play_music(prompt, 20)
 
 
