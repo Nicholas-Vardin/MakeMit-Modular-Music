@@ -9,7 +9,7 @@ url = f"http://{ESP32_IP}/instruments"
 
 
 def generate_and_play_music(prompt, duration):
-    API_KEY = "sk_f732d418f48b4571e382ad86205011d0df0ea69420333b25"
+    API_KEY = ""
 
     url = "https://api.elevenlabs.io/v1/music/generate"
 

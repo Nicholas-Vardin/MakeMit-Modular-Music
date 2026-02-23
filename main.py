@@ -16,7 +16,7 @@ def doEsp32():
         if newInstruments != instruments :
             instruments = newInstruments
             print("starting new music with:", instruments)
-            prompt = f"make an upbeat song sure to excite people with only these instruments: {instruments}, Make sure theres no vocals"
+            prompt = f"make a jazzy song sure to excite people with only these instruments: {instruments}, Make sure theres no vocals"
             senderTest.generate_and_play_music(prompt, 20)
 
 
